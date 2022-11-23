@@ -1,4 +1,4 @@
-package part2;
+package main.java.part2;
 
 public class StringsInJava {
     public static void main(String[] args) {
