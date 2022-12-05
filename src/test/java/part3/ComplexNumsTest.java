@@ -1,6 +1,6 @@
 package test.java.part3;
 
-import main.java.part3.complexnumbers.ComplexNumber;
+import main.java.part3.ComplexNumber;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

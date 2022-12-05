@@ -1,4 +1,4 @@
-package main.java.part3.integral;
+package main.java.part3;
 
 import java.util.function.DoubleUnaryOperator;
 

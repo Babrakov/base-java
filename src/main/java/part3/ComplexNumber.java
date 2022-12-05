@@ -1,4 +1,4 @@
-package main.java.part3.complexnumbers;
+package main.java.part3;
 
 /*
 Дан класс ComplexNumber. Переопределите в нем методы equals() и hashCode() так, чтобы equals() сравнивал
