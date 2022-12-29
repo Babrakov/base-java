@@ -1,4 +1,4 @@
-package main.java.part3.moverobots;
+package ru.infoza.part3.moverobots;
 
 /*
 На игровом поле находится робот. Позиция робота на поле описывается двумя целочисленным координатами: X и Y.

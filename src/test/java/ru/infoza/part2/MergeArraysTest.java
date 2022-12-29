@@ -1,9 +1,9 @@
-package test.java.part2;
+package ru.infoza.part2;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static main.java.part2.MergeArrays.mergeArrays;
+import static ru.infoza.part2.MergeArrays.mergeArrays;
 
 public class MergeArraysTest {
 

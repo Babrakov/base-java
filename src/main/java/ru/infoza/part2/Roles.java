@@ -1,4 +1,4 @@
-package main.java.part2;
+package ru.infoza.part2;
 
 /*Вам дан список ролей и сценарий пьесы в виде массива строчек.
 

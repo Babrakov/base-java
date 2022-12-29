@@ -1,9 +1,9 @@
-package test.java.part2;
+package ru.infoza.part2;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static main.java.part2.CheckPalindrome.isPalindrome;
+import static ru.infoza.part2.CheckPalindrome.isPalindrome;
 
 public class CheckPalindromeTest {
     @Test

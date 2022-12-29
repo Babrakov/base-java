@@ -1,4 +1,4 @@
-package main.java.part2;
+package ru.infoza.part2;
 
 import java.math.BigInteger;
 

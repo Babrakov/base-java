@@ -1,4 +1,4 @@
-package main.java.part3;
+package ru.infoza.part3;
 
 /*
 Напишите класс AsciiCharSequence, реализующий компактное хранение последовательности ASCII-символов

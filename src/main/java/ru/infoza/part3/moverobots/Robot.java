@@ -1,4 +1,4 @@
-package main.java.part3.moverobots;
+package ru.infoza.part3.moverobots;
 
 public class Robot {
     int x;

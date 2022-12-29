@@ -1,4 +1,4 @@
-package main.java.part3;
+package ru.infoza.part3;
 
 import java.util.function.DoubleUnaryOperator;
 

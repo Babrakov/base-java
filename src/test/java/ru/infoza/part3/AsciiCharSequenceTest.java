@@ -1,8 +1,8 @@
-package test.java.part3;
+package ru.infoza.part3;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import main.java.part3.AsciiCharSequence;
+import ru.infoza.part3.AsciiCharSequence;
 
 public class AsciiCharSequenceTest {
 

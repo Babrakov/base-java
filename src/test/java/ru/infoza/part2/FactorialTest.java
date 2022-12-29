@@ -1,11 +1,11 @@
-package test.java.part2;
+package ru.infoza.part2;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.math.BigInteger;
 
-import static main.java.part2.Factorial.factorial;
+import static ru.infoza.part2.Factorial.factorial;
 
 public class FactorialTest {
 

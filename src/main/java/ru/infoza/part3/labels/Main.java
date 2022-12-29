@@ -1,4 +1,4 @@
-package main.java.part3.labels;
+package ru.infoza.part3.labels;
 
 /*
 https://stepik.org/lesson/14513/step/9?unit=4147

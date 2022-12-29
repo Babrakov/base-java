@@ -1,4 +1,4 @@
-package main.java;
+package main.java.ru.infoza;
 
 public class Laboratory {
 //    public static void main(String[] args) {

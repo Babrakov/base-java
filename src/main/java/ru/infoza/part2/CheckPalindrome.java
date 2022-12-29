@@ -1,4 +1,4 @@
-package main.java.part2;
+package ru.infoza.part2;
 
 public class CheckPalindrome {
     public static void main(String[] args) {
