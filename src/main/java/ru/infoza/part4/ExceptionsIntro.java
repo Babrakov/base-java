@@ -10,7 +10,8 @@ public class ExceptionsIntro {
 
     public static void main(String[] args) {
         System.out.println(getCallerClassAndMethodName());
-        m1();    }
+        m1();
+    }
 
     static void m1() {
         System.out.println(getCallerClassAndMethodName());

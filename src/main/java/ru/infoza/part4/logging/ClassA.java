@@ -1,2 +1,4 @@
-package ru.infoza.part4.logging;public class ClassA {
+package ru.infoza.part4.logging;
+
+public class ClassA {
 }
