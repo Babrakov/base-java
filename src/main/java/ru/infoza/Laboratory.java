@@ -1,5 +1,9 @@
 package main.java.ru.infoza;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+
 public class Laboratory {
 //    public static void main(String[] args) {
 //        System.out.println(getCallerClassAndMethodName());
@@ -40,6 +44,20 @@ public class Laboratory {
             return className + "#" + methodName;
         }
         return null; // your implementation here
+    }
+
+    public static void collections(){
+        Collection<?> collection = new ArrayList<>();
+        Object object = new Object();
+//        Object object = new int[3];
+        System.out.println(collection.size());
+        System.out.println(collection.toArray());
+        collection.clear();
+//        collection.addAll(Arrays.asList(object));
+        collection.remove(object);
+        collection.iterator();
+        collection.contains(object);
+//        collection.add(object);
     }
 
 }
