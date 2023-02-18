@@ -1,8 +1,10 @@
-package main.java.ru.infoza;
+package ru.infoza;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.function.Function;
+import java.util.function.Predicate;
 
 public class Laboratory {
 //    public static void main(String[] args) {
@@ -14,18 +16,22 @@ public class Laboratory {
 
     public static void main(String[] args) {
         System.out.println(getCallerClassAndMethodName());
-        m1();    }
+        m1();
+    }
 
     static void m1() {
         System.out.println(getCallerClassAndMethodName());
-        m2();    }
+        m2();
+    }
 
     static void m2() {
         System.out.println(getCallerClassAndMethodName());
-        m3();    }
+        m3();
+    }
 
     static void m3() {
-        System.out.println(getCallerClassAndMethodName());    }
+        System.out.println(getCallerClassAndMethodName());
+    }
 
     private static void method() {
         anotherMethod();
@@ -37,7 +43,7 @@ public class Laboratory {
 
     public static String getCallerClassAndMethodName() {
         StackTraceElement[] stackTraceElements = Thread.currentThread().getStackTrace();
-        if(stackTraceElements.length > 3) {
+        if (stackTraceElements.length > 3) {
             StackTraceElement element = stackTraceElements[3];
             String className = element.getClassName();
             String methodName = element.getMethodName();
@@ -46,7 +52,7 @@ public class Laboratory {
         return null; // your implementation here
     }
 
-    public static void collections(){
+    public static void collections() {
         Collection<?> collection = new ArrayList<>();
         Object object = new Object();
 //        Object object = new int[3];
@@ -58,6 +64,16 @@ public class Laboratory {
         collection.iterator();
         collection.contains(object);
 //        collection.add(object);
+    }
+
+    public static <T, U> Function<T, U> ternaryOperator(
+            Predicate<? super T> condition,
+            Function<? super T, ? extends U> ifTrue,
+            Function<? super T, ? extends U> ifFalse) {
+
+        Function<T, U> func = x -> condition.test(x) ? ifTrue.apply(x) : ifFalse.apply(x);
+        return func; // your implementation here
+
     }
 
 }

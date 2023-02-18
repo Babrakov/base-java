@@ -1,45 +1,29 @@
 package ru.infoza.part6.collections;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class Main {
 
     public static void main(String[] args) {
-        Set<Integer> num1 = new HashSet<>();
-        num1.add(3);
-        num1.add(7);
-        num1.add(9);
-//        num1.add(1);
-//        num1.add(2);
-//        num1.add(3);
-
-        HashSet<Integer> num2 = new HashSet<>();
-        num2.add(5);
-        num2.add(7);
-        num2.add(12);
-//        num2.add(0);
-//        num2.add(1);
-//        num2.add(2);
-
-        Set<Integer> result = symmetricDifference(num1,num2);
-        System.out.println(result);
+        Scanner scanner = new Scanner(System.in);
+        List<Integer> list = new ArrayList<>();
+        int i = 0;
+        int next;
+        while (scanner.hasNext()) {
+            try {
+                next = scanner.nextInt();
+                if (i%2!=0)
+                    list.add(next);
+                i++;
+            } catch (InputMismatchException e){
+                scanner.next();
+            }
+        }
+        Collections.reverse(list);
+        for (int j = 0; j < list.size(); j++) {
+            System.out.print(list.get(j) + " ");
+        }
     }
 
-    public static <T> Set<T> symmetricDifference(Set<? extends T> set1, Set<? extends T> set2) {
 
-        Set<T> first = new HashSet<>();
-        first.addAll(set1);
-        Set<T> second = new HashSet<>();
-        second.addAll(set2);
-
-        Set<T> all = new HashSet<>();
-        all.addAll(first);
-        all.addAll(second);
-
-        first.retainAll(second);
-        all.removeAll(first);
-
-        return all;
-    }
 }
